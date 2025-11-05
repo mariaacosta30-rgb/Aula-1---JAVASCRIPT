@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 1</title>
-     <style>
+    <style>
         body {
             background-color: #856375; 
             display: flex;
@@ -15,38 +15,54 @@
             padding: 20px;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
+            flex-direction: column;
         }
 
-          h2 {
+        h2 {
             text-align: center;
             color: #fff9f9; 
             margin-top: 0;
             margin-bottom: 1.5em;
         }
 
-</style>
+        button {
+            display: block;
+            width: 50%; /* Faz o botão ocupar a linha inteira */
+            padding: 15px;
+            font-size: 16px;
+            background-color: #fff;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <h2>Primeiro contato com javascript</h2> <br> 
+    <h2>Primeiro contato com JavaScript</h2>
 
-    <button onclick="Boasvindas()"> clique aqui </button>
+    <button onclick="Boasvindas()">Clique aqui</button>
 
     <script> 
-    function Boasvindas() {
-        let Nome = prompt("digite seu Nome:");
-        alert("Bem-vindo,"+Nome+"! Vamos aprender JavaScript");
+        function Boasvindas() {
+            let Nome = prompt("Digite seu nome:");
+            alert("Bem-vindo, " + Nome + "! Vamos aprender JavaScript");
 
-        let Idade = prompt("digite sua Idade:");
-        alert("Bem-vindo,"+Idade+"! Vamos aprender JavaScript");
+            let Idade = prompt("Digite sua idade:");
+            alert("Sua idade é " + Idade);
 
-        let CPF = prompt("digite seu CPF:");
-        alert("Bem-vindo,"+CPF+"! Vamos aprender JavaScript");
+            let CPF = prompt("Digite seu CPF:");
+            alert("Seu CPF é " + CPF);
 
-        let EstadoCivil = prompt("digite seu Estado Civil:");
-        alert("Bem-vindo,"+EstadoCivil+"! Vamos aprender JavaScript");
-
-    }
-    
+            let EstadoCivil = prompt("Digite seu estado civil:");
+            alert("Você é " + EstadoCivil);
+        }
     </script> 
 </body>
 </html>
